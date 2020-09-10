@@ -10,6 +10,7 @@ import 'package:tech_everywhere/speakers/speaker_page.dart';
 import 'package:tech_everywhere/sponsors/sponsor_page.dart';
 import 'package:tech_everywhere/team/team_page.dart';
 import 'package:tech_everywhere/utils/devfest.dart';
+import 'package:tech_everywhere/web_frame.dart';
 
 class ConfigPage extends StatefulWidget {
   static const String routeName = "/";
@@ -59,6 +60,9 @@ class _ConfigPageState extends State<ConfigPage> {
               appBarTheme: AppBarTheme(
                 elevation: 0.0,
               ),
+            ),
+            builder: (context, child) => WebFrame(
+              child: child,
             ),
             home: HomePage(),
             routes: {

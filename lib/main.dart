@@ -5,7 +5,6 @@ import 'package:tech_everywhere/utils/dependency_injection.dart';
 import 'package:tech_everywhere/utils/devfest.dart';
 import 'package:tech_everywhere/utils/simple_bloc.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'config/config_page.dart';
 
 Future<void> main() async {
